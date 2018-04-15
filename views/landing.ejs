@@ -1,0 +1,47 @@
+
+
+<!--<h1>Landing page</h1>-->
+
+<!--<p>Welcome to Yelp Camp</p>-->
+
+<!--<a href="/campgrounds">View all Campgrounds</a>-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ario's YelpCamp</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/stylesheets/landing.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+    </head>
+    <body>
+    
+        <div class="container">
+            <% if(error && error.length > 0){ %>
+                <div class="alert alert-danger" role="alert">
+                    <%= error %>
+                </div>
+            <% } %>
+            <% if(success && success.length > 0){ %>
+                <div class="alert alert-success" role="alert">
+                    <%= success %>
+                </div>
+            <% } %>
+        </div>
+        
+        <div id="landing-header">
+     		<h1 class="landingColour">Welcome to Ario's YelpCamp!</h1>
+     		<h2 class="landingColour">This is to showcase my skills as a full-stack developer and ability to work with different framework and libraries in addition to databases and technologies required to create functional and beautiful apps.</h2>
+     		<h2 class="landingColour">If you need more information, please feel free to contact me <a href="mailto: ario_n@hotmail.co.uk">ario_n@hotmail.co.uk</a><em></em>.</h2>
+    		<a href="/campgrounds" class="btn btn-lg btn-success">View All Campgrounds</a>
+        </div>
+        
+        <ul class="slideshow">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+<% include partials/footer %>
